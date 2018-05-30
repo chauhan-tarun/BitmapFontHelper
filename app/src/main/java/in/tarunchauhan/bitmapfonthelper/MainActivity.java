@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             img.setBitmapFont(
-                    BitmapFactory.decodeStream(getAssets().open("jackpot-popup.png")),
-                    "jackpot-popup.fnt");
+                    BitmapFactory.decodeStream(getAssets().open("your_file_name")),
+                    "your_file_name_in_assets");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                img.setText("$"+String.valueOf(counter));
+                img.setText(String.valueOf(counter));
 
                 counter++;
 
